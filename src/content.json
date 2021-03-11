@@ -2,8 +2,29 @@
   "pages": [
     {
       "title": "Beginnings",
-      "description": "lorem",
+      "description": "Find things that are new, fresh, bursting with life! Green shoots, sunrises, newly cooled lava! Anything that's new to the world.",
       "bg": "suns"
+    },
+    {
+      "title": "Red",
+      "description": "Fiery, passionate, blazing red! Find things that are red in some way, from bold post boxes to ruddy red brick houses.",
+      "bg": "strawberries"
+    },
+    {
+      "title": "Blue",
+      "description": "Melancholy, soothing, azure blue! Find things that are blue in some way, from eggshell skies to surly seas.",
+      "bg": "rain"
+    },
+    {
+      "title": "Bark",
+      "description": "Silvery, craggy, cracked or smooth. It takes all sorts to cover a tree! Go and collect some interesting bark photos and stick there here!",
+      "bg": "leaves"
+    },
+    {
+      "title": "Endings",
+      "description": "All good things must come to an end, including this book! Look for anything from graveyards to cold tea, this is a page for endings.",
+      "bg": "moons"
     }
+
   ]
 }

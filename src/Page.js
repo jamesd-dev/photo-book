@@ -7,8 +7,36 @@ const useStyles = makeStyles(() => {
     return {
         root: {
             backgroundImage: ({backgroundImage}) => `url(${backgroundImage})`,
+            backgroundSize: 'contain',
             width: '100%',
             height: '100%',
+            boxSizing: 'border-box',
+        },
+        titleBox: {
+           backgroundColor: 'white',
+           width: '100%',
+           padding: '6rem 4rem',
+           boxSizing: 'border-box',
+        },
+        title: {
+            fontSize: '7rem',
+            margin: '0',
+        },
+        description: {
+            fontSize: '2rem',
+            margin: '2rem 0',
+        },
+        photoBoxContainer: {
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+        },
+        horizontalPhotoBox: {
+            width: '54.1vw',
+            height: '40.5vw',
+            backgroundColor: 'red',
         }
     }
 });
@@ -21,12 +49,12 @@ function Page(props) {
     const classes = useStyles({backgroundImage});
     return (
         <div className={classes.root}>
-            <div>
-                <h1>{id + " - " + title}</h1>
-                <p>{description}</p>
+            <div className={classes.titleBox}>
+                <h1 className={classes.title}>{id + " - " + title}</h1>
+                <p className={classes.description}>{description}</p>
             </div>
-            <div>
-                <div/>
+            <div className={classes.photoBoxContainer}>
+                <div className={classes.horizontalPhotoBox}/>
                 <div/>
             </div>
         </div>
