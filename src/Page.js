@@ -1,64 +1,65 @@
-import React from 'react';
-import {makeStyles} from "@material-ui/core/styles";
 import backgrounds from "./backgrounds/backgrounds";
+import React from 'react';
+import { PDFViewer, Page, Text, View, Document, Image, StyleSheet } from '@react-pdf/renderer';
+import titleLayouts from "./layouts/titlePage/titleLayouts";
 
-
-const useStyles = makeStyles(() => {
-    return {
-        root: {
-            backgroundImage: ({backgroundImage}) => `url(${backgroundImage})`,
-            backgroundSize: 'contain',
-            width: '100%',
-            height: '100%',
-            boxSizing: 'border-box',
-        },
-        titleBox: {
-           backgroundColor: 'white',
-           width: '100%',
-           padding: '6rem 4rem',
-           boxSizing: 'border-box',
-        },
-        title: {
-            fontSize: '7rem',
-            margin: '0',
-        },
-        description: {
-            fontSize: '2rem',
-            margin: '2rem 0',
-        },
-        photoBoxContainer: {
-            width: '100%',
-            height: '100%',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-        },
-        horizontalPhotoBox: {
-            width: '54.1vw',
-            height: '40.5vw',
-            backgroundColor: 'red',
-        }
+const styles = StyleSheet.create({
+    viewer: {
+        width: '100vw',
+        height: '100vh',
+    },
+    page: {
+        backgroundColor: '#E4E4E4',
+        margin: 0,
+    },
+    header: {
+        backgroundColor: 'white',
+        padding: '20pt',
+    },
+    image: {
+        position: 'absolute',
+        width: '110%',
+        height: '110%',
+        left: '-2%',
+        top: '-2%',
+        objectFit: 'cover',
+    },
+    title: {
+        fontSize: '30pt',
+    },
+    description: {
+        fontSize: '10pt',
+        padding: '10pt 0',
+    },
+    horizontalPhotoBox: {
+        width: '8cm',
+        height: '6cm',
+        backgroundColor: 'white',
+        margin: 'auto',
     }
 });
 
-function Page(props) {
+function PhotoPage(props) {
+
     const { id } = props.match.params;
     const { pages } = require('./content.json');
     const { title, description, bg } = pages[id];
     const backgroundImage = (backgrounds[bg]) ? backgrounds[bg] : backgrounds.triangles;
-    const classes = useStyles({backgroundImage});
+
     return (
-        <div className={classes.root}>
-            <div className={classes.titleBox}>
-                <h1 className={classes.title}>{id + " - " + title}</h1>
-                <p className={classes.description}>{description}</p>
-            </div>
-            <div className={classes.photoBoxContainer}>
-                <div className={classes.horizontalPhotoBox}/>
-                <div/>
-            </div>
-        </div>
-    )
+        <PDFViewer style={styles.viewer}>
+            <Document style={styles.page}>
+                <Page size="A5" style={styles.page}>
+                    <Image style={styles.image} src={backgroundImage}/>
+                    <View style={styles.header}>
+                        <Text style={styles.title}>{`${id} - ${title}`}</Text>
+                        <Text style={styles.description}>{description}</Text>
+                    </View>
+                    {titleLayouts[1]}
+                </Page>
+            </Document>
+        </PDFViewer>
+    );
 }
 
-export default Page;
+export default PhotoPage;
