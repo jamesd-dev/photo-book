@@ -1,20 +1,13 @@
 import backgrounds from "./backgrounds/backgrounds";
 import React from 'react';
-import { PDFViewer, Page, Text, View, Document, Image, StyleSheet } from '@react-pdf/renderer';
+import { Page, Text, View, Image, StyleSheet } from '@react-pdf/renderer';
 import titleLayouts from "./layouts/titlePage/titleLayouts";
+import emptyLayouts from "./layouts/EmptyPageLayouts/EmptyLayouts";
 
 const styles = StyleSheet.create({
-    viewer: {
-        width: '100vw',
-        height: '100vh',
-    },
-    page: {
-        backgroundColor: '#E4E4E4',
-        margin: 0,
-    },
     header: {
         backgroundColor: 'white',
-        padding: '20pt',
+        padding: '1cm 1cm',
     },
     image: {
         position: 'absolute',
@@ -26,39 +19,39 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: '30pt',
+        fontFamily: 'Libre Baskerville',
     },
     description: {
         fontSize: '10pt',
-        padding: '10pt 0',
+        paddingTop: '5mm',
+        fontFamily: 'Montserrat',
     },
-    horizontalPhotoBox: {
-        width: '8cm',
-        height: '6cm',
-        backgroundColor: 'white',
-        margin: 'auto',
-    }
 });
 
-function PhotoPage(props) {
+function getRandomFromArray(array) {
+    const randomIndex = Math.floor(Math.random() * array.length)
+    return array[randomIndex];
+}
 
-    const { id } = props.match.params;
-    const { pages } = require('./content.json');
-    const { title, description, bg } = pages[id];
+function PhotoPage({page, index}) {
+    const { title, description, bg } = page;
     const backgroundImage = (backgrounds[bg]) ? backgrounds[bg] : backgrounds.triangles;
 
     return (
-        <PDFViewer style={styles.viewer}>
-            <Document style={styles.page}>
+        <>
                 <Page size="A5" style={styles.page}>
                     <Image style={styles.image} src={backgroundImage}/>
                     <View style={styles.header}>
-                        <Text style={styles.title}>{`${id} - ${title}`}</Text>
+                        <Text style={styles.title}>{`${index} - ${title}`}</Text>
                         <Text style={styles.description}>{description}</Text>
                     </View>
-                    {titleLayouts[1]}
+                    {getRandomFromArray(titleLayouts)}
                 </Page>
-            </Document>
-        </PDFViewer>
+                <Page size="A5" style={styles.page}>
+                    <Image style={styles.image} src={backgroundImage}/>
+                    {getRandomFromArray(emptyLayouts)}
+                </Page>
+        </>
     );
 }
 

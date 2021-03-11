@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { Font } from '@react-pdf/renderer'
 
-Font.register({ family: 'Libre Baskerville', src: "src/LibreBaskerville-Regular.ttf" });
+Font.register({ family: 'Libre Baskerville', src: "src/libre-baskerville.ttf" });
 
 ReactDOM.render(
   <React.StrictMode>
