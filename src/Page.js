@@ -42,7 +42,7 @@ function PhotoPage({page, index}) {
                 <Page size="A5" style={styles.page}>
                     <Image style={styles.image} src={backgroundImage}/>
                     <View style={styles.header}>
-                        <Text style={styles.title}>{`${index} - ${title}`}</Text>
+                        <Text style={styles.title}>{`${index + 1} - ${title}`}</Text>
                         <Text style={styles.description}>{description}</Text>
                     </View>
                     {getRandomFromArray(titleLayouts)}

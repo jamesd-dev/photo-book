@@ -11,14 +11,334 @@
       "bg": "strawberries"
     },
     {
+      "title": "Orange",
+      "description": "Bright, cheery and energetic! Find things that are orange in some way, from blushing blooms to conveniently named fruits.",
+      "bg": "dots"
+    },
+    {
+      "title": "Yellow",
+      "description": "Joyful, sunny and radiant! Find things that are yellow in some way, from post-it notes to dandelions.",
+      "bg": "suns"
+    },
+    {
+      "title": "Green",
+      "description": "Reassuring, healthy and alive! Find things that are green in some way, from fresh cut grass to daring cars.",
+      "bg": "leaves"
+    },
+    {
       "title": "Blue",
       "description": "Melancholy, soothing, azure blue! Find things that are blue in some way, from eggshell skies to surly seas.",
       "bg": "rain"
     },
     {
+      "title": "Violet",
+      "description": "Regal, grand and rich! Find things that are violet in some way, from bishops to tropical birds.",
+      "bg": "birds"
+    },
+    {
       "title": "Bark",
       "description": "Silvery, craggy, cracked or smooth. It takes all sorts to cover a tree! Go and collect some interesting bark photos and stick there here!",
       "bg": "leaves"
+    },
+    {
+      "title": "Industrial",
+      "description": "Smog, rust and brick. Find some things that are suitably grimy.",
+      "bg": "gears"
+    },
+    {
+      "title": "Urban",
+      "description": "We live surrounded by people, find some evidence of them for this one. Graffiti, skyscrapers and footprints would all work.",
+      "bg": "squares"
+    },
+    {
+      "title": "Bird's Eye",
+      "description": "Time for a new perspective, find somewhere high up and look down. Mountain views, rickety step ladders and your own feet are all fun to try.",
+      "bg": "birds"
+    },
+    {
+      "title": "Worm's Eye",
+      "description": "Worms have all the fun, collect some photos looking up at things.",
+      "bg": "bugs"
+    },
+    {
+      "title": "Step By Step",
+      "description": "Make something! Anything! And take photos of it as it comes together. Stars, origami and cake would all be exciting.",
+      "bg": "gears"
+    },
+    {
+      "title": "Flying",
+      "description": "So many things swoop and glide! Collect some photos of paper planes, birds, dragonflies and anything else that fails to fall.",
+      "bg": "birds"
+    },
+    {
+      "title": "Old Things",
+      "description": "Stately or decrepit?, some things age better than others. Hunt around for things that wear their age well, from fine whiskey to sighing oaks.",
+      "bg": "stars"
+    },
+    {
+      "title": "New Things",
+      "description": "Shiny as a new penny! Find some shiny newly minted things to fill these pages! Wet ink, presents still in their wrapping, and newly fallen snow all fit the description.",
+      "bg": "snowflakes"
+    },
+    {
+      "title": "Music",
+      "description": "Music may be invisible, but the things that make it are not! Find some things that mean music to you, from orchestras to headphones.",
+      "bg": "violins"
+    },
+    {
+      "title": "Cosy",
+      "description": "Warm blankets, Hot chocolate with elaborate toppings and glittering fairy lights, Find some things that feel cozy to you.",
+      "bg": "rain"
+    },
+    {
+      "title": "Joy",
+      "description": "Cake, laughter and sparklers, find some things that capture the feeling of joy for you!",
+      "bg": "suns"
+    },
+    {
+      "title": "Wonder",
+      "description": "No matter how old you get, everyone still \"Ooooos\" at fireworks. Collect some things that leave you slack jawed with wonder.",
+      "bg": "stars"
+    },
+    {
+      "title": "Freedom",
+      "description": "Running away from your problems only really works in zombie films, but it's fun to do all the same. Find some things that look like freedom to you!",
+      "bg": "birds"
+    },
+    {
+      "title": "Textures",
+      "description": "Silk, velvet, thorns and stone. Capture some particularly interesting textures for your collection.",
+      "bg": "triangles"
+    },
+    {
+      "title": "Textiles",
+      "description": "From flags to flannel shirts, fabric is everywhere! Find some samples for this page.",
+      "bg": "dots"
+    },
+    {
+      "title": "Decay",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Fungi",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Shadows",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Christmas",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "New Year's Day",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Easter",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Halloween",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Guy Fawkes Night",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Dawn",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Noon",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Dusk",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Midnight",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Fire",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Earth",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Air",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Water",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Storms",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Rainbows",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Rain",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Sunshine",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Bugs",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Architecture",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Leaves",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Seeds",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Twisted",
+      "description": "Find the most gnarled, twisted, crooked things you can for this page!",
+      "bg": "shrooms"
+    },
+    {
+      "title": "Broken",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Change",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Underneath",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Shells",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Berries",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Forage",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Loony",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Portals",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Technology",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Wild",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Lamps",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Ice",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Bricks",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Splashes",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Sweets",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Flowers",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Winter",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Spring",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Summer",
+      "description": "lorem",
+      "bg": "lorem"
+    },
+    {
+      "title": "Autumn",
+      "description": "lorem",
+      "bg": "lorem"
     },
     {
       "title": "Endings",

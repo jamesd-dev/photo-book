@@ -28,10 +28,9 @@ function App() {
   return (
       <PDFViewer style={styles.viewer}>
           <Document>
-              {/*{pages.map((page, index) =>*/}
-              {/*    <PhotoPage index={index} page={page}/>*/}
-              {/*)}*/}
-              <PhotoPage index={0} page={pages[0]}/>
+              {pages.map((page, index) =>
+                  <PhotoPage index={index} page={page}/>
+              )}
           </Document>
       </PDFViewer>
   )
