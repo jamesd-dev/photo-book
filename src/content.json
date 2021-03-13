@@ -1,7 +1,28 @@
 {
+  "introduction": {
+    "title": "Introduction",
+    "content": [
+      "Happy Birthday! We couldn't find a book that seemed right for you, so we decided to write one.",
+      "We know you like photography, and one of my favourite ways to play with a camera was to do trips where I would only photograph things in a certain theme. For instance a trip where I could only photograph red things. It's a fantastic way to turn photography into a game and break out of the habit of photographing the same thing over and over again.",
+      "These pages each hold a topic/theme that you can take photos to match. We kept the topics vague enough to let you be creative with how you answer them, so feel free to play fast and loose with their interpretation.",
+      "We hope you enjoy the idea."
+    ]
+  },
+  "howToUsePage": {
+    "title": "How To Use This Book",
+    "content": [
+      "Yes, yes, I know you know how to use a book, but bear with me.\nEach page of this book contains a theme/topic. The idea is to use it as a scavenger hunt, collecting photos matching each theme and filling the empty slots in the pages with printed out copies.",
+      "The slots are 6 x 8 cm. To print photos with these dimensions, windows gives the wallet option when printing photos on A4. The wallet option allows you to print 9 photos at 6 x 8. The option is shown in the photo below.",
+      "<photo>"
+    ]
+  },
+  "contentsPage": {
+    "title": "Contents",
+    "description": "Not every page in the book, just an overview of the themes."
+  },
   "examplePage" : {
     "title": "0 - Books",
-    "description": "Books are wonderous, exciting things! And I'm not at all biased! To give you the gist of how this book might be used, here is a helpful example page to show you how a book themed page might look!",
+    "description": "Books are wondrous, exciting things! And I'm not at all biased! To give you the gist of how this book might be used, here is a helpful example page to show you how a book themed page might look!",
     "bg": "stars"
   },
   "pages": [

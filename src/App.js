@@ -4,6 +4,9 @@ import {PDFDownloadLink, Document, PDFViewer, StyleSheet, Font} from "@react-pdf
 import libreBaskerville from './fonts/libre-baskerville.ttf';
 import montserrat from './fonts/montserrat.ttf';
 import ExamplePage from "./ExamplePage";
+import TextPage from "./TextPage";
+import windowsWalletImage from './howToUseThisBookImages/Screenshot 2021-03-13 161211.png';
+import ContentsPage from "./ContentsPage";
 
 const styles = StyleSheet.create({
     viewer: {
@@ -23,7 +26,7 @@ Font.register( {
 });
 
 const MyDoc = () => {
-    const { pages } = require('./content.json');
+    const { pages, howToUsePage, introduction, contentsPage } = require('./content.json');
 
     return (
         <PDFViewer style={styles.viewer}>
@@ -31,7 +34,10 @@ const MyDoc = () => {
             {/*{pages.map((page, index) =>*/}
             {/*    <PhotoPage index={index} page={page}/>*/}
             {/*)}*/}
-            <ExamplePage/>
+            {/*<ExamplePage/>*/}
+            <TextPage page={introduction}/>
+            <TextPage page={howToUsePage} photos={[windowsWalletImage]}/>
+            <ContentsPage page={contentsPage} themePages={pages}/>
         </Document>
         </PDFViewer>
     )
