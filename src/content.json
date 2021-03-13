@@ -1,4 +1,9 @@
 {
+  "examplePage" : {
+    "title": "0 - Books",
+    "description": "Books are wonderous, exciting things! And I'm not at all biased! To give you the gist of how this book might be used, here is a helpful example page to show you how a book themed page might look!",
+    "bg": "stars"
+  },
   "pages": [
     {
       "title": "Beginnings",
